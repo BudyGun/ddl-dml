@@ -56,7 +56,7 @@ docker run --name=mysql -d -p 33060:3306 mysql/mysql-server:latest
 ```
 docker logs mysql
 ```
-Меняю пароль на свой pass:   
+Меняю пароль на свой pass для удобства:   
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'pass';
 ```
