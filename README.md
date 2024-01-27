@@ -57,7 +57,21 @@ CREATE user 'sys_temp'@'localhost' IDENTIFIED BY '12345';
 ```
 SELECT User, Host FROM mysql.user;
 ```
-![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/1.png)
+![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/1.png)   
+
+Даю пользователю все права:   
+```
+GRANT ALL PRIVILEGES ON * . * TO 'sys_temp'@'localhost';
+```
+Перегружаю все привелегии:
+```
+FLUSH PRIVILEGES;
+```
+Проверяю выданные привелегии:   
+```
+GRANT ALL PRIVILEGES ON * . * TO 'sys_temp'@'localhost';
+```
+![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/2.png)   
 
 
 
