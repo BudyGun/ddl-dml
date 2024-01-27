@@ -69,7 +69,7 @@ FLUSH PRIVILEGES;
 ```
 Проверяю выданные привелегии:   
 ```
-GRANT ALL PRIVILEGES ON * . * TO 'sys_temp'@'localhost';
+SHOW GRANTS FOR 'sys_temp'@'localhost';
 ```
 ![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/2.png)   
 
