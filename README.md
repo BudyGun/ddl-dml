@@ -51,8 +51,16 @@ docker pull mysql/mysql-server:latest
 ```
 ```
 docker run --name=mysql -d -p 33060:3306 mysql/mysql-server:latest
-```   
-Захожу в докер командой:   
+```
+Настраиваю докер, смотрю текущий пароль root пользователя.
+```
+docker logs mysql.
+```
+Меняю пароль на свой 12345:   
+```
+ALTER USER 'root'@'localhost' IDENTIFIED BY '12345';
+```
+Захожу в докер командой и ввожу пароль:   
 ```
 docker exec -it mysql mysql -uroot -p
 ```
