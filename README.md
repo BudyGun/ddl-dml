@@ -45,7 +45,14 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 *Результатом работы должны быть скриншоты обозначенных заданий, а также простыня со всеми запросами.*   
 
 ### Решение 1   
-Установил mysql в докере. Захожу в докер командой:   
+Установил mysql в докере. 
+```
+docker pull mysql/mysql-server:latest
+```
+```
+docker run --name=mysql -d -p 33060:3306 mysql/mysql-server:latest
+```   
+Захожу в докер командой:   
 ```
 docker exec -it mysql mysql -uroot -p
 ```
