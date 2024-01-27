@@ -98,6 +98,22 @@ SELECT USER();
 ```
 ![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/11.png)   
 
+Создал новую базу:
+```
+mysql -u sys_temp -p -e 'CREATE DATABASE sakila;'
+```
+Проверяю:
+```
+mysql -u sys_temp -p -e 'SHOW DATABASES;'
+```
+Импортирую данные:
+```
+mysql -u sys_temp -p sakila < ~/sakila-db/sakila-schema.sql
+```
+![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/30.png) 
+
+
+
 ### Задание 2
 Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
 ```
