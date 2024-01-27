@@ -110,8 +110,8 @@ mysql -u sys_temp -p -e 'SHOW DATABASES;'
 ```
 mysql -u sys_temp -p sakila < ~/sakila-db/sakila-schema.sql
 ```
-![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/30.png) 
-
+![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/30.png)    
+![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/40.png) 
 
 
 ### Задание 2
