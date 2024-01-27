@@ -73,6 +73,10 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 ```
 ![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/2.png)   
 
+Переподключаюсь к ьазе от имени пользователя sys_temp:   
+```
+ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345';
+```
 
 
 
