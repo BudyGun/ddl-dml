@@ -44,7 +44,21 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 
 *Результатом работы должны быть скриншоты обозначенных заданий, а также простыня со всеми запросами.*   
 
-### Решение 1
+### Решение 1   
+Установил mysql в докере. Захожу в докер командой:   
+```docker exec -it mysql mysql -uroot -p
+```
+Ввожу в консоле команду для создания пользователя с паролем 12345:   
+```
+CREATE user 'sys_temp'@'localhost' IDENTIFIED BY '12345';
+```
+Проверяю таблицу пользователей:
+```
+SELECT User, Host FROM mysql.user;
+```
+
+
+
 
 
 ### Задание 2
