@@ -88,15 +88,15 @@ SHOW GRANTS FOR 'sys_temp'@'localhost';
 ```
 ![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/2.png)   
 
-Переподключаюсь к базе от имени пользователя sys_temp:   
+Выхожу из консоли и переподключаюсь к базе от имени пользователя sys_temp:   
 ```
-ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345';
+docker exec -it mysql mysql -usys_temp -p
 ```
 Проверяю пользователя командой:
 ```
 SELECT USER();
 ```
-![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/10.png)   
+![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/11.png)   
 
 ### Задание 2
 Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
