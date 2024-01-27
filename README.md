@@ -57,8 +57,8 @@ CREATE user 'sys_temp'@'localhost' IDENTIFIED BY '12345';
 ```
 SELECT User, Host FROM mysql.user;
 ```
+![alt text]([https://github.com/BudyGun/ddl-dml/blob/main/images/1.png])
 
-https://github.com/BudyGun/ddl-dml/blob/main/images/1.png
 
 
 
