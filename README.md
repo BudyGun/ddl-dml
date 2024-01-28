@@ -106,9 +106,10 @@ mysql -u sys_temp -p -e 'CREATE DATABASE sakila;'
 ```
 mysql -u sys_temp -p -e 'SHOW DATABASES;'
 ```
-Импортирую данные:
+Импортирую:
 ```
-mysql -u sys_temp -p sakila < ~/sakila-db/sakila-schema.sql
+mysql -u sys_temp -p sakila < ~/sakila-db/sakila-schema.sql;
+mysql -u sys_temp -p sakila < ~/sakila-db/sakila-data.sql;
 ```
 ![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/30.png)    
 ![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/40.png) 
@@ -120,7 +121,11 @@ mysql -u sys_temp -p sakila < ~/sakila-db/sakila-schema.sql
 ```
 Название таблицы | Название первичного ключа
 customer         | customer_id
-```
+```   
+### Решение 2   
+![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/60.png) 
+![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/Книга1.xlsx) 
+
 
 
 ## Дополнительные задания (со звёздочкой*)
