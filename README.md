@@ -123,8 +123,8 @@ mysql -u sys_temp -p sakila < ~/sakila-db/sakila-data.sql;
 customer         | customer_id
 ```   
 ### Решение 2   
-![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/60.png)    
-![таблица](https://github.com/BudyGun/ddl-dml/blob/main/images/Книга1.xlsx) 
+![alt text](https://github.com/BudyGun/ddl-dml/blob/main/images/70.png)    
+![таблица](https://github.com/BudyGun/ddl-dml/blob/main/images/Книга2.xlsx) 
 
 
 
